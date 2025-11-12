@@ -8,7 +8,123 @@
     background:linear-gradient(to right,rgba(39, 7, 26, 0.9),rgba(39, 7, 26, 0.801),rgba(39, 7, 26, 0.834),rgba(39, 7, 26, 0.834),rgba(39, 7, 26, 0.9));
  }
 
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
 
+h1 {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h2 {
+    color: #4CAF50;
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 2. تنسيق الصورة التفاعلية (الرابط النقطي) */
+.intro-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro-section a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.3s;
+}
+
+.intro-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.intro-section p {
+    font-size: 1.1em;
+    color: #555;
+    font-weight: bold;
+}
+
+/* 3. تنسيق قائمة المحتوى باستخدام Flexbox */
+.content-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px;
+    justify-content: center;
+}
+
+.content-list li {
+    flex: 1 1 45%; /* كل عنصر يشغل حوالي 45% من العرض */
+    min-width: 280px; 
+    background-color: #e6f7ff;
+    border: 1px solid #b3e0ff;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.content-list li:hover {
+    background-color: #cceeff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-list a {
+    text-decoration: none;
+    color: #0056b3;
+    font-weight: bold;
+    display: block;
+    font-size: 1.1em;
+}
+
+.content-list a strong {
+    color: #d9534f;
+    font-size: 0.9em;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.content-list a span {
+    display: block;
+    font-size: 0.9em;
+    color: #666;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+/* 4. التجاوب مع أحجام الشاشات (Responsive Design) */
+@media (max-width: 650px) {
+    body {
+        padding: 10px;
+    }
+    .container {
+        padding: 15px;
+    }
+    .content-list li {
+        flex: 1 1 100%; /* عرض عمود واحد على الموبايل */
+        min-width: unset;
+    }
+    h1 {
+        font-size: 1.4em;
+    }}
+    /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
  header {
     display: flex;
     justify-content: space-between;
@@ -136,9 +252,9 @@
    color: rgba(0, 0, 0, 0.881);
   font-size: 22px;
   border: #000 1px solid;
-  border-radius: 50px;
+  border-radius: 30px;
   background-color: #a3a3a3ea;
-  padding: 13px;
+  padding: 15px;
 }
 
 .works {
