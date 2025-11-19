@@ -472,3 +472,20 @@ footer{
       justify-content: center;
    }
 }
+.rtyr{
+   font-size: 30px;
+   color: white;
+   background-color: #000000;
+   text-align: center;
+   border: none;
+   border-radius: 20px;
+   padding: 16px;
+   margin: 13px;
+   width: auto;
+   text-decoration: none;
+   border-width: 0cap;
+   }
+.rtyr:hover{
+    box-shadow: 0 8px 20px 0 rgba(255, 0, 0, 0.24),0 17px 50px 0 rgba(255, 0, 0, 0.19);
+        transition: 0.01s;
+}

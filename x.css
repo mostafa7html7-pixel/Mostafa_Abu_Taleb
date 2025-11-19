@@ -1,0 +1,60 @@
+.v{
+    background: linear-gradient(to right,rgb(112, 11, 11),rgb(42, 23, 87));
+    border: none;
+    border-radius: 30px;
+    padding: 7px;
+    margin: 5px;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+    font-style:normal;
+    text-align: center;}
+    .v:hover{
+        background: linear-gradient(to right,rgb(42, 23, 87),rgb(112, 11, 11));
+        color: white;
+        box-shadow: 0 8px 20px 0 rgba(255, 0, 0, 0.24),0 17px 50px 0 rgba(255, 0, 0, 0.19);
+        transition: 0.1s;
+    }
+ body{
+    background-color: rgb(0, 0, 0);
+ }
+ .f{
+    border: top;
+    border-radius:7cqmin;
+    padding: 0px; 
+  padding-bottom: 0px;
+}
+.f:hover{
+    border: none;
+    padding: 0%;
+    border-radius: 40px;
+    box-shadow: 0 7px 21px rgb(187, 178, 178) , 0 17px 50px 0 rgb(216, 211, 211);
+    transition:0.50,s;
+      padding-bottom: 0%;
+        padding-right: 0%;
+          padding-left: 0%;
+}
+.q{ width: 200px;
+border: #000 2px solid;
+border-radius: 30px;
+border-style: double;
+border-color: rgb(112, 11, 11);
+background: linear-gradient(to right,rgb(78, 21, 21),rgb(0, 0, 0));
+color: whitesmoke;
+font-size: 20px;
+padding: 10px;
+text-align: center;
+align-items: center;
+padding-bottom: 3px;
+
+}
+.q:hover{
+   box-shadow: 0 8px 20px 0 rgba(255, 0, 0, 0.24),0 17px 50px 0 rgba(255, 0, 0, 0.19);
+        transition: 0.01s;
+}
+.q:hover{
+     box-shadow: 0 8px 20px 0 rgba(255, 0, 0, 0.24),0 17px 50px 0 rgba(255, 0, 0, 0.19);
+        transition: 0.01s;
+          box-shadow: 0 7px 21px rgb(247, 0, 0) , 0 17px 50px 0 rgb(248, 1, 1);
+    transition:0.50,s;
+}
