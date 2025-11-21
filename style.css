@@ -475,12 +475,12 @@ footer{
 .rtyr{
    font-size: 30px;
    color: white;
-   background-color: #000000;
    text-align: center;
    border: none;
    border-radius: 20px;
    padding: 16px;
    margin: 13px;
+   background-color: #000000;
    width: auto;
    text-decoration: none;
    border-width: 0cap;
@@ -488,4 +488,53 @@ footer{
 .rtyr:hover{
     box-shadow: 0 8px 20px 0 rgba(255, 0, 0, 0.24),0 17px 50px 0 rgba(255, 0, 0, 0.19);
         transition: 0.01s;
+    padding-left: 0%;
+
+}
+.rkk{
+  display: block;
+  margin-left: 49px;
+  margin-right: auto;
+  width: 540px;
+  height: 365px;
+    border: none;
+  padding: 0%;
+  border-radius: 40px;
+  box-shadow: 0 7px 21px rgb(177, 30, 30), 0 17px 50px 0 rgb(185, 6, 6);
+  transition: 0.50, s;}
+  /* ____________________________________________________________________________________ */
+  /* إزالة الفراغات الجانبية العامة */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+*, *::before, *::after { box-sizing: inherit; }
+
+/* حاوية الفيديو تملأ العرض بدون فراغات وتمنع ظهور المحتوى خارج الإطار */
+.video-wrapper {
+  width: 50%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  
+
+  /* اختر أحد الأسطر التالية حسب كيف تريد عرض الفيديو: */
+  height: calc(100vw * 9 / 16); /* خيار افتراضي: ارتفاع يعتمد على عرض الشاشة (16:9) */
+   height: 60vh;         /* بديل: يشغل نسبة من ارتفاع الشاشة */
+}
+
+/* يجعل الفيديو يملأ الحاوية ويقص ما يتجاوز لتفادي الفراغين الجانبيين */
+.video-wrapper .rkk {
+  width: 86%;
+  height: 100%;
+  display: block;
+  object-fit: cover;        /* يملأ الحاوية ويقص الزائد */
+  object-position: center;  /* ضبّط مركز القص */
+}
+
+/* خفض سمك الحدود على شاشات صغيرة */
+@media (max-width: 420px) {
+  .video-wrapper { border-width: 8px; }
 }
