@@ -422,7 +422,7 @@ footer{
       gap: 1rem;
    }
    .aboutName, .aboutTitle {
-      font-size: 2rem;
+      font-size: 1rem;
    }
    .light {
       width: 60px;
@@ -436,6 +436,7 @@ footer{
    .worksContainer{
       padding: 5rem 0rem;
       gap: 3rem;
+      border-radius: 30px;
    }
    .projectTitle {
       margin-left: 1rem;
@@ -495,11 +496,11 @@ footer{
   display: block;
   margin-left: 49px;
   margin-right: auto;
-  width: 540px;
+  width: 440px;
   height: 365px;
     border: none;
   padding: 0%;
-  border-radius: 40px;
+  border-radius: 30px;
   box-shadow: 0 7px 21px rgb(177, 30, 30), 0 17px 50px 0 rgb(185, 6, 6);
   transition: 0.50, s;}
   /* ____________________________________________________________________________________ */
@@ -535,32 +536,31 @@ html, body {
 }
 
 /* خفض سمك الحدود على شاشات صغيرة */
-@media (max-width: 420px) {
+@media (max-width: 320px) {
   .video-wrapper { border-width: 8px; }
 }
 /* ...existing code... */
 /* video: full-bleed, no side gaps, cover fit */
-html, body { margin: 0; padding: 0; width: 100%; box-sizing: border-box; }
+html, body { margin: 0; padding: 0; width: 99%; box-sizing: border-box; }
 *, *::before, *::after { box-sizing: inherit; }
 
 .video-wrapper {
-  width: 100%;
-  max-width: 100%;
+  width: 90%;
+  max-width: 90%;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  border: 10px solid #701521; /* عدّل اللون/السمك حسب الرغبة */
-  border-radius: 0;
-  background: #000;
+ 
   /* ارتفاع نسبي: 16:9 افتراضياً */
-  height: calc(100vw * 9 / 16);
+  height: calc(100vw * 6 / 17);
 }
 
 .video-wrapper .rkk {
-  width: 87%;
-  height: 98%;
+  width: 78%;
+  margin-left: 17%;
+  height: 99%;
   display: block;
-  object-fit: cover;       /* يملأ الحاوية ويقص الزائد لتجنب الفراغين */
+     /* يملأ الحاوية ويقص الزائد لتجنب الفراغين */
   object-position: center;
 }
 
